@@ -1,0 +1,85 @@
+body{
+     padding-bottom: 10vh;
+     width: 100vw;
+     margin: 0;
+     background: black;
+     color: rgba(255, 255, 255, 0.9);
+     font-family: PP Neue Montreal;
+     overflow-x: hidden;
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     gap: 5vh;
+}
+::-webkit-scrollbar{
+     display: none;
+}
+@font-face {
+     font-family: PP Neue Montreal;
+     src: url(font/PPNeueMontreal-Book.otf);
+}
+.nav{
+     width: 97vw;
+     margin: 1vh 1.5vw;
+     height: 8.5vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     font-size: 2.25vh;
+}
+img{
+     resize: both;
+     height: 5vh;
+}
+.section-0, .section-1, .section-2{
+     margin: 0vh 1.5vw;
+     width: 97vw;
+     display: flex;
+     justify-content: space-between;
+     font-size: 3.25vh;
+}
+
+.about, .focus, .prof{width: 32vw;}
+.prof{width: 35vw;}
+.milestones, .skills, .contact{width: 35vw;text-align: right;}
+
+.bold{
+     background: white;
+     color: black;
+     font-weight: bold;
+     padding: 0 .25vw;
+}
+.bold:hover{cursor: pointer;}
+
+.heading{
+     background-image: linear-gradient(white, white);
+     background-repeat: no-repeat;
+     background-size: 100% 5%;
+     background-position: bottom;
+     margin-bottom: 1.5vh;
+     font-weight: 550;
+}
+
+@media (max-width:860px){
+     .nav{
+          width: 90vw;
+          margin: 1vh 1.5vw;
+     }
+     .section-0, .section-1, .section-2{
+          width: 90vw;
+          margin: 0 1.5vw;
+          flex-direction: column;
+          justify-content: center;
+          gap: 5vh;
+     }
+
+     .about, .focus, .prof{width: 100%;}
+
+     .milestones, .skills, .contact{
+          text-align: left;
+          width: 100%;
+     }
+     .heading{
+          margin-bottom: 2.5vh 0;
+     }
+}
