@@ -16,7 +16,7 @@ body{
 }
 @font-face {
      font-family: PP Neue Montreal;
-     src: url(font/PPNeueMontreal-Book.otf);
+     src: url(PPNeueMontreal-Book.otf);
 }
 .nav{
      width: 97vw;
